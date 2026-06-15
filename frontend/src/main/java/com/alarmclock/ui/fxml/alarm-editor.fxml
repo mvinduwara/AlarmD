@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.alarmclock.ui.controllers.AlarmEditorController"
+      styleClass="editor-root" spacing="18">
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <Label fx:id="titleLabel" text="New Alarm" styleClass="editor-title"/>
+
+    <HBox alignment="CENTER" spacing="8" styleClass="time-picker-box">
+        <Spinner fx:id="hourSpinner" styleClass="time-spinner" editable="true"/>
+        <Label text=":" styleClass="time-separator"/>
+        <Spinner fx:id="minuteSpinner" styleClass="time-spinner" editable="true"/>
+    </HBox>
+
+    <VBox spacing="6">
+        <Label text="Label" styleClass="field-label"/>
+        <TextField fx:id="labelField" promptText="Alarm name"/>
+    </VBox>
+
+    <VBox spacing="6">
+        <Label text="Repeat" styleClass="field-label"/>
+        <HBox spacing="6" alignment="CENTER">
+            <ToggleButton fx:id="mondayButton" text="M" styleClass="day-toggle"/>
+            <ToggleButton fx:id="tuesdayButton" text="T" styleClass="day-toggle"/>
+            <ToggleButton fx:id="wednesdayButton" text="W" styleClass="day-toggle"/>
+            <ToggleButton fx:id="thursdayButton" text="T" styleClass="day-toggle"/>
+            <ToggleButton fx:id="fridayButton" text="F" styleClass="day-toggle"/>
+            <ToggleButton fx:id="saturdayButton" text="S" styleClass="day-toggle"/>
+            <ToggleButton fx:id="sundayButton" text="S" styleClass="day-toggle"/>
+        </HBox>
+    </VBox>
+
+    <HBox spacing="16">
+        <VBox spacing="6" HBox.hgrow="ALWAYS">
+            <Label text="Sound" styleClass="field-label"/>
+            <ComboBox fx:id="soundComboBox" maxWidth="Infinity"/>
+        </VBox>
+        <VBox spacing="6" HBox.hgrow="ALWAYS">
+            <Label text="Snooze (min)" styleClass="field-label"/>
+            <Spinner fx:id="snoozeSpinner" maxWidth="Infinity" editable="true"/>
+        </VBox>
+    </HBox>
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <HBox spacing="12" alignment="CENTER_RIGHT">
+        <Button fx:id="deleteButton" text="Delete" styleClass="text-button" visible="false" managed="false"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="cancelButton" text="Cancel" styleClass="secondary-button"/>
+        <Button fx:id="saveButton" text="Save" styleClass="primary-button"/>
+    </HBox>
+
+</VBox>
