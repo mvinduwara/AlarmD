@@ -1,0 +1,71 @@
+.dashboard-header {
+    -fx-spacing: 6px;
+}
+
+.clock-label {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+.date-label {
+    -fx-font-size: 14px;
+    -fx-opacity: 0.6;
+}
+
+.next-alarm-banner {
+    -fx-background-color: derive(-accent-color, 60%);
+    -fx-background-radius: 12px;
+    -fx-padding: 10px 14px;
+    -fx-spacing: 8px;
+}
+
+.next-alarm-icon {
+    -fx-icon-color: -accent-color;
+}
+
+.next-alarm-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -accent-color;
+}
+
+.alarm-list {
+    -fx-background-color: transparent;
+    -fx-padding: 8px 12px;
+}
+
+.alarm-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 6px 0;
+}
+
+.alarm-list .list-cell:filled:selected,
+.alarm-list .list-cell:filled:hover {
+    -fx-background-color: transparent;
+}
+
+.empty-state-label {
+    -fx-text-alignment: center;
+    -fx-opacity: 0.5;
+    -fx-font-size: 14px;
+}
+
+.fab-container {
+    -fx-background-color: transparent;
+}
+
+.fab-button {
+    -fx-background-color: -accent-color;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-min-width: 56px;
+    -fx-min-height: 56px;
+    -fx-max-width: 56px;
+    -fx-max-height: 56px;
+    -fx-effect: dropshadow(gaussian, rgba(99,102,241,0.5), 16, 0.3, 0, 4);
+    -fx-cursor: hand;
+}
+
+.fab-button:hover {
+    -fx-background-color: derive(-accent-color, -10%);
+}
