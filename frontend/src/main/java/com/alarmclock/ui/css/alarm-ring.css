@@ -1,0 +1,50 @@
+.ring-root {
+    -fx-background-color: linear-gradient(to bottom right, #1e1b4b, #4338ca);
+}
+
+.ring-content {
+    -fx-padding: 40px;
+}
+
+.ring-bell-icon {
+    -fx-icon-color: white;
+}
+
+.ring-time {
+    -fx-font-size: 72px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.ring-label {
+    -fx-font-size: 22px;
+    -fx-text-fill: rgba(255,255,255,0.85);
+}
+
+.ring-snooze-button {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-text-fill: white;
+    -fx-background-radius: 30px;
+    -fx-padding: 14px 36px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.ring-snooze-button:hover {
+    -fx-background-color: rgba(255,255,255,0.25);
+}
+
+.ring-dismiss-button {
+    -fx-background-color: white;
+    -fx-text-fill: #4338ca;
+    -fx-background-radius: 30px;
+    -fx-padding: 14px 36px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.ring-dismiss-button:hover {
+    -fx-background-color: rgba(255,255,255,0.9);
+}
