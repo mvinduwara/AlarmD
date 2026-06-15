@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.alarmclock.ui.controllers.SettingsController"
+      styleClass="settings-root" spacing="20">
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
+
+    <Label text="Settings" styleClass="editor-title"/>
+
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <VBox HBox.hgrow="ALWAYS">
+            <Label text="24-Hour Time" styleClass="field-label"/>
+            <Label text="Switch between 24-hour and 12-hour clock display" styleClass="field-hint"/>
+        </VBox>
+        <atlantafx.base.controls.ToggleSwitch fx:id="timeFormatSwitch"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="12">
+        <VBox HBox.hgrow="ALWAYS">
+            <Label text="Dark Theme" styleClass="field-label"/>
+            <Label text="Switch between light and dark appearance" styleClass="field-hint"/>
+        </VBox>
+        <atlantafx.base.controls.ToggleSwitch fx:id="darkThemeSwitch"/>
+    </HBox>
+
+    <VBox spacing="6">
+        <Label text="Default Alarm Sound" styleClass="field-label"/>
+        <ComboBox fx:id="defaultSoundComboBox" maxWidth="Infinity"/>
+    </VBox>
+
+    <VBox spacing="6">
+        <Label text="Default Snooze Duration (minutes)" styleClass="field-label"/>
+        <Spinner fx:id="defaultSnoozeSpinner" maxWidth="Infinity" editable="true"/>
+    </VBox>
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <HBox spacing="12" alignment="CENTER_RIGHT">
+        <Button fx:id="closeButton" text="Done" styleClass="primary-button"/>
+    </HBox>
+
+</VBox>
