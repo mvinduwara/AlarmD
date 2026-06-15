@@ -1,0 +1,118 @@
+.root {
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+    -card-bg-color: derive(-fx-base, 8%);
+    -card-radius: 16px;
+    -accent-color: #6366f1;
+}
+
+.dashboard-root {
+    -fx-background-color: -fx-background;
+}
+
+.icon-button {
+    -fx-background-radius: 50%;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.icon-button:hover {
+    -fx-background-color: derive(-fx-base, 15%);
+}
+
+.primary-button {
+    -fx-background-color: -accent-color;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 24px;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: derive(-accent-color, -10%);
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-border-color: derive(-fx-base, 25%);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 24px;
+    -fx-cursor: hand;
+}
+
+.text-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ef4444;
+    -fx-cursor: hand;
+}
+
+.text-button:hover {
+    -fx-underline: true;
+}
+
+.field-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.7;
+}
+
+.field-hint {
+    -fx-font-size: 11px;
+    -fx-opacity: 0.55;
+}
+
+.editor-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.editor-root, .settings-root {
+    -fx-background-color: -fx-background;
+    -fx-background-radius: 18px;
+    -fx-min-width: 380px;
+    -fx-pref-width: 380px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 24, 0.2, 0, 8);
+}
+
+.time-picker-box {
+    -fx-padding: 8px;
+}
+
+.time-spinner {
+    -fx-pref-width: 90px;
+}
+
+.time-spinner .text-field {
+    -fx-font-size: 28px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+.time-separator {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.day-toggle {
+    -fx-min-width: 36px;
+    -fx-min-height: 36px;
+    -fx-max-width: 36px;
+    -fx-max-height: 36px;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-border-color: derive(-fx-base, 25%);
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-size: 12px;
+}
+
+.day-toggle:selected {
+    -fx-background-color: -accent-color;
+    -fx-text-fill: white;
+    -fx-border-color: -accent-color;
+}
