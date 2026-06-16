@@ -1,0 +1,5 @@
+com\alarmclock\core\events\EventsPackage.class
+com\alarmclock\core\service\ServicePackage.class
+module-info.class
+com\alarmclock\core\db\DbPackage.class
+com\alarmclock\core\model\ModelPackage.class

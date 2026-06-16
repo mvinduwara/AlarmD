@@ -1,0 +1,13 @@
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\AppContext.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\components\AlarmCard.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\controllers\AlarmEditorController.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\controllers\AlarmRingController.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\controllers\DashboardController.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\controllers\SettingsController.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\MainApplication.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\models\AlarmViewModel.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\store\AlarmStore.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\theme\ThemeManager.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\util\SceneNavigator.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\com\alarmclock\ui\util\TimeFormatter.java
+D:\PROJECTS\alarm-desktop-app\frontend\src\main\java\module-info.java
